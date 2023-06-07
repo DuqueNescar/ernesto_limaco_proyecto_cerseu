@@ -1,0 +1,15 @@
+{% extends "clientes/base_generic.html" %}
+
+{% block content %}
+
+   <div>
+        {% for clientes in data %}
+
+            <p><strong> Nonbre y tipo  </strong> {{ clientes.nombre }} es de  {{ clientes.dni }}  </p>
+
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

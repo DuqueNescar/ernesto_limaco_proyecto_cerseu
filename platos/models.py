@@ -4,6 +4,7 @@ from django.db import models
 class Platos(models.Model):
     nombre = models.CharField(max_length=40)
     precio = models.CharField(max_length=5, default='30')
+    procedencia = models.CharField(max_length=12)
 
     def __str__(self):
         return "{}".format(self.nombre)
