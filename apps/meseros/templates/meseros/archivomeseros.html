@@ -1,0 +1,15 @@
+{% extends "meseros/base_generic.html" %}
+
+{% block content %}
+
+<h1>Esto son los Meseros </h1>
+
+    <div>
+        {% for meseros in data %}
+
+            <p><strong> Nonbre y tipo:  </strong>  {{ meseros.nombre }} es de  {{ meseros.procedencia }} y tiene {{ meseros.edad }} </p>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}
